@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>CS424 Viewer&#39;s Choice by nizobe</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>CS424 Viewer&#39;s Choice</h1>
+          <h2>Visualizing MBTA Data</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/nizobe" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>This project, found at <a href="http://mbtaviz.github.io/">http://mbtaviz.github.io/</a>, gives a great way to cut through an abundance of data regarding the Massachusetts Bay Transit Authority (MBTA). The data set in question is all of the MBTA train trips in the month of February 2014. In the words of the authors, Mike Barry and Brian Card, this project aims to "...help people in Boston better understand the trains, how people use the trains, and how the people and trains interact with each other". This is accomplished through a series of well laid out graphs, charts, and other, if I may say, clever visualization -all of which feature some sort of interactivity which brings further clarity than would otherwise be possible with static elements.</p>
+
+<h3>
+<a id="sections" class="anchor" href="#sections" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sections</h3>
+
+<p>After the introduction, the page is quite conveniently broken down into a handful of sections -each of which has a handy link directly to said section when you hover over the section title. I will touch on all but the last two and highlight things of note, both positive and negative. The sections are as follows:</p>
+
+<ul>
+<li>   <a href="http://mbtaviz.github.io/#trains">The Trains</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#people">The People</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#interaction">How People and Trains Affect Each Other</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#your-commute.place-bmmnl.place-aport">Your Commute</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#summary">Summary</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#credits">Credits</a>
+</li>
+<li>   <a href="http://mbtaviz.github.io/#source-code">Source Code</a>
+</li>
+</ul>
+
+<h3>
+<a id="the-trains" class="anchor" href="#the-trains" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Trains</h3>
+
+<p>The first section of the project and arguably the most impressive. Now while the data set in question encompasses the entirety of February 2014, this section does not. Aside from a single table at the beginning of this section, this section focuses entirely on just one day, February 3, 2014, instead of the whole month. <img src="http://i.imgur.com/eJaSbBg.png" alt="Trains from February 3, 2014"> The chart here is very impressive, to say the least. Each colored line represents a train of like colored line, for the duration of its travels that day. As a static chart, it is impressive, though a smidge cluttered. The interactive magic comes in the form of the ability to animate the diagram on the left of the different lines and stations, as you hover over the graph, moving vertically to proceed through time. Further, clicking on either a train's dot on the left, or a train's line on the right, will link the diagram and the chart by toggling highlighting of the train in question in both elements, as seen below <img src="https://www.dropbox.com/s/dykorbedvv520gv/cs424_choice_ss2.png?dl=0" alt="Individual Train Highlighting"> The developers went the extra mile in this section in two ways. The first is by giving links under the left diagram to highlight entire lines or to scroll the page/chart to a particular region of the day. The second is with clear and concise observations along the right hand side of the chart, with connecting lines from annotations to the chart where appropriate. I found these annotations to contain answers to the questions I found myself pondering while looking at this visualization.</p>
+
+<p>At the bottom of this section, we find a visualization at least as impressive as the one that came before it. <img src="https://www.dropbox.com/s/b3ynzgv83pw7qe4/cs424_choice_ss3.png?dl=0" alt="Starting Points Chart"> The same data from the above chart is shown, but in a more concise format. The interactivity here is probably my favorite of the project. Hovering over a line highlights that train's trip, seen here: <img src="https://www.dropbox.com/s/y76orqx1ss8vukn/cs424_choice_ss4.png?dl=0" alt="Individual Train Highlighting"> But clicking a line gives a nice zoom effect to a detail view for that train: <img src="https://www.dropbox.com/s/rer5r7373i2wv0r/cs424_choice_ss5.png?dl=0" alt="Individual Train Detail"></p>
+
+<h3>
+<a id="the-people" class="anchor" href="#the-people" aria-hidden="true"><span class="octicon octicon-link"></span></a>The People</h3>
+
+<p>This section, unsurprisingly, focuses on the movement of people, not trains, through the MBTA rail system. Unlike the previous section, this section concerns itself with the entirety of the data set. There is a caveat though, regarding the numbers: since not all stations have a turnstile (read: measurable) exit, the data is an average of entrances and exits. So this visualization gives more general view of people trafficking the MBTA, than a view of entrances and exits separately. There is a handy highlight effect and tooltip for each portion of this visualization, seen below: <img src="https://www.dropbox.com/s/ybxceilg0e969o4/cs424_choice_ss6.png?dl=0" alt="People Visualization"></p>
+
+<p>The next visualization was the favorite of a notable number of friends who I showed this visualization. It's a way of getting a per-station detail view of the preceding visualization. Each station can be clicked (on either the left diagram or the right chart) to toggle expansion the data for that particular station; multiple stations can be expanded at once to allow for comparison between stations. The first pair of boxes for each station offer a detail tooltip for each hour sub-element. And then below, in the expanded view, is a reproduction of the preceding visualization, but focusing on a single station. Of particular note regarding the interactivity of this visualization is, once again, the interplay between the left and right visualization elements. The size of ALL the stations' circles (not just the expanded station) change according to their traffic, as different parts of the detail view on the right are hovered over. This allows for both a numerical and a visual comparison of the data, as well as a sort of timeline manipulation if you hover in order, since each element on the right detail view is a single hour of the day. <img src="https://www.dropbox.com/s/by4083rmufclmzc/cs424_choice_ss8.png?dl=0" alt="Station People Traffic Detail"></p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        </section>
+
+        <footer>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
